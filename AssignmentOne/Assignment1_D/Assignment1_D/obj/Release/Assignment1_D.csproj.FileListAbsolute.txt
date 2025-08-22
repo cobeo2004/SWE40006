@@ -1,0 +1,15 @@
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\obj\Release\Assignment1_D.csproj.AssemblyReference.cache
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\obj\Release\Assignment1_D.Properties.Resources.resources
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\obj\Release\Assignment1_D.csproj.GenerateResource.cache
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\obj\Release\Assignment1_D.csproj.CoreCompileInputs.cache
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\bin\Release\Assignment1_D.exe.config
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\bin\Release\Assignment1_D.exe
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\bin\Release\Assignment1_D.pdb
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\bin\Release\Assignment1_D_DataClass.dll
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\bin\Release\ClassLibrary1.dll
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\bin\Release\Assignment1_D_DataClass.pdb
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\bin\Release\ClassLibrary1.pdb
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\obj\Release\Assignme.AB8C134C.Up2Date
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\obj\Release\Assignment1_D.exe
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\obj\Release\Assignment1_D.pdb
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\obj\Release\Assignment1_D.exe.config

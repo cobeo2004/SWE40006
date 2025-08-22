@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "GaxQHNPj5Xk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\Assignment1_C_UWP\\Assignment1_C_UWP.wapproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.26100.1742\\microsoft.windows.sdk.buildtools.10.0.26100.1742.nupkg.sha512"
+  ],
+  "logs": []
+}

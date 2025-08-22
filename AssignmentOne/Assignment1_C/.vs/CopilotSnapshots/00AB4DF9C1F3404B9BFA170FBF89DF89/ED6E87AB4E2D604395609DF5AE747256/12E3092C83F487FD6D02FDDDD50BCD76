@@ -1,0 +1,194 @@
+﻿namespace Assignment1_C
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.lblDescription = new System.Windows.Forms.Label();
+            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.lstTodos = new System.Windows.Forms.ListBox();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
+            this.lblTodos = new System.Windows.Forms.Label();
+            this.lblSelectedTodo = new System.Windows.Forms.Label();
+            this.txtSelectedDescription = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(12, 15);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(35, 15);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Title";
+            // 
+            // txtTitle
+            // 
+            this.txtTitle.Location = new System.Drawing.Point(15, 33);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(300, 20);
+            this.txtTitle.TabIndex = 1;
+            // 
+            // lblDescription
+            // 
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.Location = new System.Drawing.Point(12, 65);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(78, 15);
+            this.lblDescription.TabIndex = 2;
+            this.lblDescription.Text = "Description";
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.Location = new System.Drawing.Point(15, 83);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(300, 60);
+            this.txtDescription.TabIndex = 3;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.LightGreen;
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(15, 155);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(100, 30);
+            this.btnAdd.TabIndex = 4;
+            this.btnAdd.Text = "Add Todo";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // lstTodos
+            // 
+            this.lstTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lstTodos.FormattingEnabled = true;
+            this.lstTodos.ItemHeight = 15;
+            this.lstTodos.Location = new System.Drawing.Point(350, 33);
+            this.lstTodos.Name = "lstTodos";
+            this.lstTodos.Size = new System.Drawing.Size(400, 154);
+            this.lstTodos.TabIndex = 5;
+            this.lstTodos.SelectedIndexChanged += new System.EventHandler(this.lstTodos_SelectedIndexChanged);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.LightCoral;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(130, 155);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(100, 30);
+            this.btnDelete.TabIndex = 6;
+            this.btnDelete.Text = "Delete Todo";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.LightBlue;
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.Location = new System.Drawing.Point(650, 200);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(100, 30);
+            this.btnRefresh.TabIndex = 7;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
+            // lblTodos
+            // 
+            this.lblTodos.AutoSize = true;
+            this.lblTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTodos.Location = new System.Drawing.Point(347, 15);
+            this.lblTodos.Name = "lblTodos";
+            this.lblTodos.Size = new System.Drawing.Size(66, 15);
+            this.lblTodos.TabIndex = 8;
+            this.lblTodos.Text = "Todo List";
+            // 
+            // lblSelectedTodo
+            // 
+            this.lblSelectedTodo.AutoSize = true;
+            this.lblSelectedTodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSelectedTodo.Location = new System.Drawing.Point(15, 210);
+            this.lblSelectedTodo.Name = "lblSelectedTodo";
+            this.lblSelectedTodo.Size = new System.Drawing.Size(143, 15);
+            this.lblSelectedTodo.TabIndex = 9;
+            this.lblSelectedTodo.Text = "Selected Todo Details";
+            // 
+            // txtSelectedDescription
+            // 
+            this.txtSelectedDescription.Location = new System.Drawing.Point(15, 235);
+            this.txtSelectedDescription.Multiline = true;
+            this.txtSelectedDescription.Name = "txtSelectedDescription";
+            this.txtSelectedDescription.ReadOnly = true;
+            this.txtSelectedDescription.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtSelectedDescription.Size = new System.Drawing.Size(735, 180);
+            this.txtSelectedDescription.TabIndex = 10;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(784, 441);
+            this.Controls.Add(this.txtSelectedDescription);
+            this.Controls.Add(this.lblSelectedTodo);
+            this.Controls.Add(this.lblTodos);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.lstTodos);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.txtDescription);
+            this.Controls.Add(this.lblDescription);
+            this.Controls.Add(this.txtTitle);
+            this.Controls.Add(this.lblTitle);
+            this.Name = "Form1";
+            this.Text = "Simple Todo List";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.TextBox txtTitle;
+        private System.Windows.Forms.Label lblDescription;
+        private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.ListBox lstTodos;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Label lblTodos;
+        private System.Windows.Forms.Label lblSelectedTodo;
+        private System.Windows.Forms.TextBox txtSelectedDescription;
+    }
+}
+

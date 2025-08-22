@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="Assignment1DWithWix" Language="1033" Version="1.0.0.0" Manufacturer="Xuan Tuan Minh Nguyen" UpgradeCode="034df933-3a3a-42a1-a5e3-5f00cafa1a80">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes" />
+
+		<Feature Id="ProductFeature" Title="Assignment1DWithWix" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="Assignment1DWithWix" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+			<!-- <Component Id="ProductComponent"> -->
+				<!-- TODO: Insert files, registry keys, and other resources here. -->
+			<!-- </Component> -->
+			<Component Id="Assignment1D.exe" Guid="B35B2F8F-45E3-4C50-95BD-DD3B3A1530CC">
+				<File Id="Assignment1D.exe" Name="Assignment1D.exe" Source="$(var.Assignment1_D.TargetDir)Assignment1_D.exe"></File>
+				<File Id="DataClassDll" Name="Assignment1_D_DataClass.dll" Source="$(var.Assignment1_D.TargetDir)Assignment1_D_DataClass.dll"></File>
+				<File Id="ServiceClassesDll" Name="ClassLibrary1.dll" Source="$(var.Assignment1_D.TargetDir)ClassLibrary1.dll"></File>
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

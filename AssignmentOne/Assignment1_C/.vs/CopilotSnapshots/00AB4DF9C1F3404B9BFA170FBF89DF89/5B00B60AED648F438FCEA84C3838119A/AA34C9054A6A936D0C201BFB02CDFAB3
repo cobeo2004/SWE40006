@@ -1,0 +1,300 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Common;
+using System.IO;
+using System.Text;
+
+namespace Assignment1_C
+{
+    internal class DatabaseService
+    {
+        private readonly string _connectionString;
+        private readonly string _databasePath;
+
+        public DatabaseService(string databaseName = "database.db")
+        {
+            // Place database in application directory
+            _databasePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, databaseName);
+            _connectionString = $"Data Source={_databasePath};Version=3;";
+        }
+
+        /// <summary>
+        /// Creates a new database file if it doesn't exist
+        /// </summary>
+        public void InitializeDatabase()
+        {
+            try
+            {
+                if (!File.Exists(_databasePath))
+                {
+                    // Note: You'll need to add System.Data.SQLite NuGet package for this to work
+                    // For now, this creates the basic structure
+                    File.Create(_databasePath).Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Failed to initialize database: {ex.Message}", ex);
+            }
+        }
+
+        /// <summary>
+        /// Executes a non-query SQL command (INSERT, UPDATE, DELETE, CREATE TABLE, etc.)
+        /// </summary>
+        /// <param name="sql">SQL command to execute</param>
+        /// <param name="parameters">Optional parameters for the command</param>
+        /// <returns>Number of rows affected</returns>
+        public int ExecuteNonQuery(string sql, Dictionary<string, object> parameters = null)
+        {
+            try
+            {
+                // Note: This method signature is ready for SQLite but needs System.Data.SQLite package
+                // You'll need to uncomment and modify the following code after adding the NuGet package:
+                
+                /*
+                using (var connection = new SQLiteConnection(_connectionString))
+                {
+                    connection.Open();
+                    using (var command = new SQLiteCommand(sql, connection))
+                    {
+                        if (parameters != null)
+                        {
+                            foreach (var param in parameters)
+                            {
+                                command.Parameters.AddWithValue($"@{param.Key}", param.Value ?? DBNull.Value);
+                            }
+                        }
+                        return command.ExecuteNonQuery();
+                    }
+                }
+                */
+                
+                throw new NotImplementedException("SQLite package not installed. Please install System.Data.SQLite NuGet package.");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Failed to execute non-query: {ex.Message}", ex);
+            }
+        }
+
+        /// <summary>
+        /// Executes a query and returns a single scalar value
+        /// </summary>
+        /// <param name="sql">SQL query to execute</param>
+        /// <param name="parameters">Optional parameters for the query</param>
+        /// <returns>The first column of the first row in the result set</returns>
+        public object ExecuteScalar(string sql, Dictionary<string, object> parameters = null)
+        {
+            try
+            {
+                // Note: This method signature is ready for SQLite but needs System.Data.SQLite package
+                /*
+                using (var connection = new SQLiteConnection(_connectionString))
+                {
+                    connection.Open();
+                    using (var command = new SQLiteCommand(sql, connection))
+                    {
+                        if (parameters != null)
+                        {
+                            foreach (var param in parameters)
+                            {
+                                command.Parameters.AddWithValue($"@{param.Key}", param.Value ?? DBNull.Value);
+                            }
+                        }
+                        return command.ExecuteScalar();
+                    }
+                }
+                */
+                
+                throw new NotImplementedException("SQLite package not installed. Please install System.Data.SQLite NuGet package.");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Failed to execute scalar query: {ex.Message}", ex);
+            }
+        }
+
+        /// <summary>
+        /// Executes a query and returns a DataTable with the results
+        /// </summary>
+        /// <param name="sql">SQL query to execute</param>
+        /// <param name="parameters">Optional parameters for the query</param>
+        /// <returns>DataTable containing the query results</returns>
+        public DataTable ExecuteQuery(string sql, Dictionary<string, object> parameters = null)
+        {
+            try
+            {
+                var dataTable = new DataTable();
+                
+                // Note: This method signature is ready for SQLite but needs System.Data.SQLite package
+                /*
+                using (var connection = new SQLiteConnection(_connectionString))
+                {
+                    connection.Open();
+                    using (var command = new SQLiteCommand(sql, connection))
+                    {
+                        if (parameters != null)
+                        {
+                            foreach (var param in parameters)
+                            {
+                                command.Parameters.AddWithValue($"@{param.Key}", param.Value ?? DBNull.Value);
+                            }
+                        }
+                        
+                        using (var adapter = new SQLiteDataAdapter(command))
+                        {
+                            adapter.Fill(dataTable);
+                        }
+                    }
+                }
+                */
+                
+                throw new NotImplementedException("SQLite package not installed. Please install System.Data.SQLite NuGet package.");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Failed to execute query: {ex.Message}", ex);
+            }
+        }
+
+        /// <summary>
+        /// Creates a table with the specified schema
+        /// </summary>
+        /// <param name="tableName">Name of the table to create</param>
+        /// <param name="columns">Dictionary of column names and their SQL data types</param>
+        public void CreateTable(string tableName, Dictionary<string, string> columns)
+        {
+            if (string.IsNullOrWhiteSpace(tableName))
+                throw new ArgumentException("Table name cannot be empty", nameof(tableName));
+
+            if (columns == null || columns.Count == 0)
+                throw new ArgumentException("Columns cannot be empty", nameof(columns));
+
+            var columnDefinitions = new StringBuilder();
+            foreach (var column in columns)
+            {
+                if (columnDefinitions.Length > 0)
+                    columnDefinitions.Append(", ");
+                
+                columnDefinitions.Append($"{column.Key} {column.Value}");
+            }
+
+            var sql = $"CREATE TABLE IF NOT EXISTS {tableName} ({columnDefinitions})";
+            ExecuteNonQuery(sql);
+        }
+
+        /// <summary>
+        /// Inserts a new record into the specified table
+        /// </summary>
+        /// <param name="tableName">Name of the table</param>
+        /// <param name="data">Dictionary of column names and values to insert</param>
+        /// <returns>Number of rows affected</returns>
+        public int Insert(string tableName, Dictionary<string, object> data)
+        {
+            if (string.IsNullOrWhiteSpace(tableName))
+                throw new ArgumentException("Table name cannot be empty", nameof(tableName));
+
+            if (data == null || data.Count == 0)
+                throw new ArgumentException("Data cannot be empty", nameof(data));
+
+            var columns = string.Join(", ", data.Keys);
+            var parameters = string.Join(", ", data.Keys.Select(k => $"@{k}"));
+            
+            var sql = $"INSERT INTO {tableName} ({columns}) VALUES ({parameters})";
+            return ExecuteNonQuery(sql, data);
+        }
+
+        /// <summary>
+        /// Updates records in the specified table
+        /// </summary>
+        /// <param name="tableName">Name of the table</param>
+        /// <param name="data">Dictionary of column names and new values</param>
+        /// <param name="whereClause">WHERE clause condition</param>
+        /// <param name="whereParameters">Parameters for the WHERE clause</param>
+        /// <returns>Number of rows affected</returns>
+        public int Update(string tableName, Dictionary<string, object> data, string whereClause = null, Dictionary<string, object> whereParameters = null)
+        {
+            if (string.IsNullOrWhiteSpace(tableName))
+                throw new ArgumentException("Table name cannot be empty", nameof(tableName));
+
+            if (data == null || data.Count == 0)
+                throw new ArgumentException("Data cannot be empty", nameof(data));
+
+            var setClause = string.Join(", ", data.Keys.Select(k => $"{k} = @{k}"));
+            var sql = $"UPDATE {tableName} SET {setClause}";
+
+            var allParameters = new Dictionary<string, object>(data);
+
+            if (!string.IsNullOrWhiteSpace(whereClause))
+            {
+                sql += $" WHERE {whereClause}";
+                if (whereParameters != null)
+                {
+                    foreach (var param in whereParameters)
+                    {
+                        allParameters[$"where_{param.Key}"] = param.Value;
+                    }
+                }
+            }
+
+            return ExecuteNonQuery(sql, allParameters);
+        }
+
+        /// <summary>
+        /// Deletes records from the specified table
+        /// </summary>
+        /// <param name="tableName">Name of the table</param>
+        /// <param name="whereClause">WHERE clause condition</param>
+        /// <param name="whereParameters">Parameters for the WHERE clause</param>
+        /// <returns>Number of rows affected</returns>
+        public int Delete(string tableName, string whereClause = null, Dictionary<string, object> whereParameters = null)
+        {
+            if (string.IsNullOrWhiteSpace(tableName))
+                throw new ArgumentException("Table name cannot be empty", nameof(tableName));
+
+            var sql = $"DELETE FROM {tableName}";
+
+            if (!string.IsNullOrWhiteSpace(whereClause))
+            {
+                sql += $" WHERE {whereClause}";
+            }
+
+            return ExecuteNonQuery(sql, whereParameters);
+        }
+
+        /// <summary>
+        /// Checks if a table exists in the database
+        /// </summary>
+        /// <param name="tableName">Name of the table to check</param>
+        /// <returns>True if table exists, false otherwise</returns>
+        public bool TableExists(string tableName)
+        {
+            if (string.IsNullOrWhiteSpace(tableName))
+                throw new ArgumentException("Table name cannot be empty", nameof(tableName));
+
+            var sql = "SELECT COUNT(*) FROM sqlite_master WHERE type='table' AND name=@tableName";
+            var parameters = new Dictionary<string, object> { { "tableName", tableName } };
+            
+            try
+            {
+                var result = ExecuteScalar(sql, parameters);
+                return Convert.ToInt32(result) > 0;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Gets the database file path
+        /// </summary>
+        public string DatabasePath => _databasePath;
+
+        /// <summary>
+        /// Gets the connection string
+        /// </summary>
+        public string ConnectionString => _connectionString;
+    }
+}

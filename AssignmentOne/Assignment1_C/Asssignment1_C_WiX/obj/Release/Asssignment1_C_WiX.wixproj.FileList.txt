@@ -1,0 +1,6 @@
+C:\Users\cobeo\source\repos\Assignment1_C\Asssignment1_C_WiX\bin\Release\Asssignment1_C_WiX.msi
+C:\Users\cobeo\source\repos\Assignment1_C\Asssignment1_C_WiX\bin\Release\Asssignment1_C_WiX.wixpdb
+obj\Release\Product.wixobj
+obj\Release\Asssignment1_C_WiX.wixproj.BindContentsFileListnull.txt
+obj\Release\Asssignment1_C_WiX.wixproj.BindOutputsFileListnull.txt
+obj\Release\Asssignment1_C_WiX.wixproj.BindBuiltOutputsFileListnull.txt

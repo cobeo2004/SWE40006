@@ -1,0 +1,67 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment1_C
+{
+    class TodoData
+    {
+        public string Id { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public bool IsCompleted { get; set; }
+
+        public TodoData(string id, string title, string description, bool isCompleted)
+        {
+            Id = id;
+            Title = title;
+            Description = description;
+            IsCompleted = isCompleted;
+        }
+    }
+
+    interface ITodoService
+    {
+        void AddTodo(string title, string description);
+        void DeleteTodo(string id);
+
+        List<TodoData> GetAllTodos();
+    }
+
+    internal sealed class TodoService: ITodoService
+    {
+        private  List<TodoData> _dbService;
+
+        public TodoService(string dbFilePath = "database.db")
+        {
+            _dbService = new List<TodoData>();
+        }
+
+        public void AddTodo(string title, string description)
+        {
+            var todo = new TodoData(Guid.NewGuid().ToString(), title, description, false);
+            _dbService.Add(todo);
+        }
+
+        public void DeleteTodo(string id)
+        {
+            var todo = _dbService.FirstOrDefault(t => t.Id == id);
+            if (todo != null)
+            {
+                _dbService.Remove(todo);
+            }
+            else
+            {
+                Console.WriteLine($"Todo with Id {id} not found.");
+            }
+        }
+
+        public List<TodoData> GetAllTodos()
+        {
+            return _dbService.Count > 0 ? _dbService : new List<TodoData>();
+        }
+    }
+}

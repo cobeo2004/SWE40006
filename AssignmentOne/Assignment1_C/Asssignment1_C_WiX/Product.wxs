@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="Asssignment1CWithWix" Language="1033" Version="1.0.0.0" Manufacturer="Xuan Tuan Minh Nguyen" UpgradeCode="10d0d637-8f9d-4870-a2f3-0d36c3a811ac">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes"/>
+
+		<Feature Id="ProductFeature" Title="Asssignment1CWithWix" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="Assignment1CWithWix" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+			<!-- <Component Id="ProductComponent"> -->
+				<!-- TODO: Insert files, registry keys, and other resources here. -->
+			<!-- </Component> -->
+			<Component Id="Assignment1Credit.exe" Guid="91F68C2E-1081-4262-8AA4-59AB72E83280">
+				<File Id="Assignment1Credit.exe" Name="Assignment1Credit.exe" Source="$(var.Assignment1_C.TargetPath)"></File>
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>

@@ -1,0 +1,11 @@
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C\bin\Release\Assignment1_C.exe.config
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C\bin\Release\Assignment1_C.exe
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C\bin\Release\Assignment1_C.pdb
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C\obj\Release\Assignment1_C.csproj.AssemblyReference.cache
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C\obj\Release\Assignment1_C.Form1.resources
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C\obj\Release\Assignment1_C.Properties.Resources.resources
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C\obj\Release\Assignment1_C.csproj.GenerateResource.cache
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C\obj\Release\Assignment1_C.csproj.CoreCompileInputs.cache
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C\obj\Release\Assignment1_C.exe
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C\obj\Release\Assignment1_C.pdb
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C\obj\Release\Assignment1_C.exe.config

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+	Uri="file:///C:/Users/cobeo/Simon-Nguyen/Assignment1D-UWP/Assignment1_D_UWP.appinstaller"
+	Version="1.0.0.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	<MainBundle
+		Name="8991e10f-b367-479b-b436-d8d28453e414"
+		Version="1.0.0.0"
+		Publisher="CN=Xuan Tuan Minh Nguyen"
+		Uri="file:///C:/Users/cobeo/Simon-Nguyen/Assignment1D-UWP/Assignment1_D_UWP_1.0.0.0_Test/Assignment1_D_UWP_1.0.0.0_AnyCPU.msixbundle" />
+	<UpdateSettings>
+		<OnLaunch
+			HoursBetweenUpdateChecks="0" />
+	</UpdateSettings>
+</AppInstaller>

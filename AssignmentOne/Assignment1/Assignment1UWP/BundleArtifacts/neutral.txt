@@ -1,0 +1,2 @@
+MainPackage=C:\Users\cobeo\source\repos\Assignment1\Assignment1UWP\bin\AnyCPU\Debug\Assignment1UWP_1.0.1.0_AnyCPU_Debug.msix
+SymbolPackage=C:\Users\cobeo\source\repos\Assignment1\Assignment1UWP\obj\Debug\Symbols\Assignment1UWP_1.0.1.0_AnyCPU_Debug.appxsym

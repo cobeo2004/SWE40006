@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20A8B73E-C6F9-4CFA-8809-89ADE4C1804B}|Asssignment1_C_WiX\\Asssignment1_C_WiX.wixproj|C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\Asssignment1_C_WiX\\Product.wxs||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{20A8B73E-C6F9-4CFA-8809-89ADE4C1804B}|Asssignment1_C_WiX\\Asssignment1_C_WiX.wixproj|solutionrelative:Asssignment1_C_WiX\\Product.wxs||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00240DEB-AF6C-46A1-8ADA-F17CF2AC66A7}|Assignment1_C\\Assignment1_C.csproj|c:\\users\\cobeo\\source\\repos\\assignment1_c\\assignment1_c\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00240DEB-AF6C-46A1-8ADA-F17CF2AC66A7}|Assignment1_C\\Assignment1_C.csproj|solutionrelative:assignment1_c\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00240DEB-AF6C-46A1-8ADA-F17CF2AC66A7}|Assignment1_C\\Assignment1_C.csproj|c:\\users\\cobeo\\source\\repos\\assignment1_c\\assignment1_c\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00240DEB-AF6C-46A1-8ADA-F17CF2AC66A7}|Assignment1_C\\Assignment1_C.csproj|solutionrelative:assignment1_c\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00240DEB-AF6C-46A1-8ADA-F17CF2AC66A7}|Assignment1_C\\Assignment1_C.csproj|c:\\users\\cobeo\\source\\repos\\assignment1_c\\assignment1_c\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00240DEB-AF6C-46A1-8ADA-F17CF2AC66A7}|Assignment1_C\\Assignment1_C.csproj|solutionrelative:assignment1_c\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00240DEB-AF6C-46A1-8ADA-F17CF2AC66A7}|Assignment1_C\\Assignment1_C.csproj|c:\\users\\cobeo\\source\\repos\\assignment1_c\\assignment1_c\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{00240DEB-AF6C-46A1-8ADA-F17CF2AC66A7}|Assignment1_C\\Assignment1_C.csproj|solutionrelative:assignment1_c\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00240DEB-AF6C-46A1-8ADA-F17CF2AC66A7}|Assignment1_C\\Assignment1_C.csproj|C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\assignment1_c\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00240DEB-AF6C-46A1-8ADA-F17CF2AC66A7}|Assignment1_C\\Assignment1_C.csproj|solutionrelative:assignment1_c\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00240DEB-AF6C-46A1-8ADA-F17CF2AC66A7}|Assignment1_C\\Assignment1_C.csproj|C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\assignment1_c\\packages.config||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{00240DEB-AF6C-46A1-8ADA-F17CF2AC66A7}|Assignment1_C\\Assignment1_C.csproj|solutionrelative:assignment1_c\\packages.config||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\Assignment1_C\\Program.cs",
+              "RelativeDocumentMoniker": "Assignment1_C\\Program.cs",
+              "ToolTip": "C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\Assignment1_C\\Program.cs",
+              "RelativeToolTip": "Assignment1_C\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T16:33:32.311Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Product.wxs",
+              "DocumentMoniker": "C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\Asssignment1_C_WiX\\Product.wxs",
+              "RelativeDocumentMoniker": "Asssignment1_C_WiX\\Product.wxs",
+              "ToolTip": "C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\Asssignment1_C_WiX\\Product.wxs",
+              "RelativeToolTip": "Asssignment1_C_WiX\\Product.wxs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-08-22T09:54:17.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\Assignment1_C\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Assignment1_C\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\Assignment1_C\\Form1.Designer.cs",
+              "RelativeToolTip": "Assignment1_C\\Form1.Designer.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAhwGQAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T09:35:20.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\Assignment1_C\\Form1.cs",
+              "RelativeDocumentMoniker": "Assignment1_C\\Form1.cs",
+              "ToolTip": "C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\Assignment1_C\\Form1.cs",
+              "RelativeToolTip": "Assignment1_C\\Form1.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAswKUAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T09:27:37.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\Assignment1_C\\Form1.cs",
+              "RelativeDocumentMoniker": "Assignment1_C\\Form1.cs",
+              "ToolTip": "C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\Assignment1_C\\Form1.cs [Design]",
+              "RelativeToolTip": "Assignment1_C\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T09:16:08.547Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TodoService.cs",
+              "DocumentMoniker": "C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\Assignment1_C\\TodoService.cs",
+              "RelativeDocumentMoniker": "Assignment1_C\\TodoService.cs",
+              "ToolTip": "C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\Assignment1_C\\TodoService.cs",
+              "RelativeToolTip": "Assignment1_C\\TodoService.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAwwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T16:33:48.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\Assignment1_C\\packages.config",
+              "RelativeDocumentMoniker": "Assignment1_C\\packages.config",
+              "ToolTip": "C:\\Users\\cobeo\\source\\repos\\Assignment1_C\\Assignment1_C\\packages.config",
+              "RelativeToolTip": "Assignment1_C\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-08-21T16:31:15.333Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_UWP\\Assignment1_D_UWP.wapproj": {}
+  },
+  "projects": {
+    "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D\\Assignment1_D.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D\\Assignment1_D.csproj",
+        "projectName": "Assignment1_D",
+        "projectPath": "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D\\Assignment1_D.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_DataClass\\Assignment1_D_DataClass.csproj": {
+                "projectPath": "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_DataClass\\Assignment1_D_DataClass.csproj"
+              },
+              "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_Services\\Assignment1_D_Services.csproj": {
+                "projectPath": "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_Services\\Assignment1_D_Services.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_DataClass\\Assignment1_D_DataClass.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_DataClass\\Assignment1_D_DataClass.csproj",
+        "projectName": "Assignment1_D_DataClass",
+        "projectPath": "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_DataClass\\Assignment1_D_DataClass.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_Services\\Assignment1_D_Services.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_Services\\Assignment1_D_Services.csproj",
+        "projectName": "Assignment1_D_Services",
+        "projectPath": "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_Services\\Assignment1_D_Services.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_DataClass\\Assignment1_D_DataClass.csproj": {
+                "projectPath": "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_DataClass\\Assignment1_D_DataClass.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_UWP\\Assignment1_D_UWP.wapproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_UWP\\Assignment1_D_UWP.wapproj",
+        "projectName": "Assignment1_D_UWP",
+        "projectPath": "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_UWP\\Assignment1_D_UWP.wapproj",
+        "packagesPath": "C:\\Users\\cobeo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D_UWP\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cobeo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net451"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.17763": {
+            "targetAlias": "net451",
+            "projectReferences": {
+              "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D\\Assignment1_D.csproj": {
+                "projectPath": "C:\\Users\\cobeo\\source\\repos\\Assignment1_D\\Assignment1_D\\Assignment1_D.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1702"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "uap10.0.17763": {
+          "targetAlias": "net451",
+          "dependencies": {
+            "Microsoft.Windows.SDK.BuildTools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.26100.1742, )"
+            }
+          },
+          "imports": [
+            "netcoreapp3.1",
+            "netcoreapp3.0",
+            "netcoreapp2.0",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481",
+            "net10.0-windows10.0.26100",
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

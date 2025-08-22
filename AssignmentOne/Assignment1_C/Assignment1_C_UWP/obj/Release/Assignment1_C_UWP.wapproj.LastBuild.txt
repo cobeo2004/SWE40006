@@ -1,0 +1,11 @@
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C_UWP\Images\SplashScreen.scale-200.png
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C_UWP\Images\LockScreenLogo.scale-200.png
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C_UWP\Images\Square150x150Logo.scale-200.png
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C_UWP\Images\Square44x44Logo.scale-200.png
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C_UWP\Images\Square44x44Logo.targetsize-24_altform-unplated.png
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C_UWP\Images\StoreLogo.png
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C_UWP\Images\Wide310x150Logo.scale-200.png
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C_UWP\bin\AnyCPU\Release\resources.pri
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C\bin\Release\Assignment1_C.exe
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C\bin\Release\Assignment1_C.exe.config
+C:\Users\cobeo\source\repos\Assignment1_C\Assignment1_C\bin\Release\Assignment1_C.pdb

@@ -1,0 +1,3 @@
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\bin\Release\Assignment1_D.exe
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\bin\Release\Assignment1_D_DataClass.dll
+C:\Users\cobeo\source\repos\Assignment1_D\Assignment1_D\bin\Release\ClassLibrary1.dll
