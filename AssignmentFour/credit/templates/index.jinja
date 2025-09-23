@@ -8,24 +8,7 @@
       defer
       src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
     ></script>
-    <script type="text/javascript">
-      async function markTodoAsCompleted(todoId) {
-        const response = await fetch(`/mark-todo-as-completed/${todoId}`, {
-          method: "PUT",
-        });
-        if (response.ok) {
-          window.location.reload();
-        }
-      }
-      async function deleteTodo(todoId) {
-        const response = await fetch(`/delete-todo/${todoId}`, {
-          method: "DELETE",
-        });
-        if (response.ok) {
-          window.location.reload();
-        }
-      }
-    </script>
+    <script type="text/javascript" src="{{url_for('assets', path='/script.js')}}"></script>
   </head>
   <body class="bg-gray-50 min-h-screen">
     <div class="container mx-auto max-w-2xl py-8 px-4">

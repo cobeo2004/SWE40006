@@ -1,7 +1,6 @@
 from typing import Annotated
-from fastapi import Depends, FastAPI, Form, Request
+from fastapi import Depends, FastAPI, Request
 from fastapi.responses import RedirectResponse
-from pydantic import BaseModel
 import uvicorn
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
@@ -39,7 +38,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(lifespan=lifespan)
 templates = Jinja2Templates(directory="templates")
 
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/assets", StaticFiles(directory="assets"), name="assets")
 
 app.add_middleware(
     CORSMiddleware,
@@ -83,7 +82,7 @@ async def delete_todo(todo_id: int, session: SessionDep):
 @app.get("/")
 def hello_world(request: Request, session: SessionDep):
     todos = session.exec(select(Todo)).all()
-    return templates.TemplateResponse("index.html", {"request": request, "todos": todos})
+    return templates.TemplateResponse("index.jinja", {"request": request, "todos": todos})
 
 
 if __name__ == "__main__":
