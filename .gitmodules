@@ -1,0 +1,9 @@
+[submodule "Assignment3/Pass"]
+	path = Assignment3/Pass
+	url = https://github.com/cobeo2004/SWE40006-Pass
+[submodule "Assignment3/Credit"]
+	path = Assignment3/Credit
+	url = https://github.com/cobeo2004/SWE40006-Credit
+[submodule "Assignment3/HighDistinction"]
+	path = Assignment3/HighDistinction
+	url = https://github.com/cobeo2004/SWE40006-HD
