@@ -1,8 +1,16 @@
-import { PubSubServer, createUniversalServer } from "@cobeo2004/proof-sub";
+import {
+  PubSubServer,
+  createUniversalServer,
+  type PubSubServerConfig,
+} from "@cobeo2004/proof-sub";
 
-const pubSub = new PubSubServer({
+const config = {
   schemaPath: "./proofsub/schema.ts",
   port: 3299,
-});
+} satisfies PubSubServerConfig;
 
+const pubSub = new PubSubServer(config);
+
+// Create a universal server
+// This server will define which runtime to use and run the server based on the chosen runtime
 createUniversalServer(pubSub);

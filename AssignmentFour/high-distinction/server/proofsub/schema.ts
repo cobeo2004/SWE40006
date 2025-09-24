@@ -14,6 +14,11 @@ export const eventSchemas = {
     message: z.string(),
     createdAt: z.coerce.date(),
   }),
+  "another_high_distinction.event": z.object({
+    id: z.string(),
+    message: z.string(),
+    createdAt: z.coerce.date(),
+  }),
 } as const;
 
 // Export types for TypeScript inference
